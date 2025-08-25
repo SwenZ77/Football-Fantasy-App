@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Simplified UEFA Champions League Logo -->
+  <g fill="#ffffff">
+    <!-- Main football circle -->
+    <circle cx="50" cy="50" r="45" stroke="#ffffff" stroke-width="2" fill="none"/>
+    
+    <!-- Star pattern forming the Champions League ball design -->
+    <path d="M50 15l4 12h13l-10 8 4 12-11-8-11 8 4-12-10-8h13z"/>
+    <path d="M20 25l3 9h10l-8 6 3 9-8-6-8 6 3-9-8-6h10z"/>
+    <path d="M80 25l3 9h10l-8 6 3 9-8-6-8 6 3-9-8-6h10z"/>
+    <path d="M15 50l3 9h10l-8 6 3 9-8-6-8 6 3-9-8-6h10z"/>
+    <path d="M85 50l3 9h10l-8 6 3 9-8-6-8 6 3-9-8-6h10z"/>
+    <path d="M20 75l3 9h10l-8 6 3 9-8-6-8 6 3-9-8-6h10z"/>
+    <path d="M80 75l3 9h10l-8 6 3 9-8-6-8 6 3-9-8-6h10z"/>
+    <path d="M50 85l4 12h13l-10 8 4 12-11-8-11 8 4-12-10-8h13z"/>
+    
+    <!-- Pentagon patterns inside -->
+    <path d="M50 35l-8 6h-5l3-9h20l3 9h-5l-8-6z"/>
+    <path d="M35 45l-6 8v5l9-3v-20l-9-3v5l6 8z"/>
+    <path d="M65 45l6 8v5l-9-3v-20l9-3v5l-6 8z"/>
+    <path d="M42 65l6-8v-5l-9 3v20l9 3v-5l-6-8z"/>
+    <path d="M58 65l-6-8v-5l9 3v20l-9 3v-5l6-8z"/>
+  </g>
+</svg>

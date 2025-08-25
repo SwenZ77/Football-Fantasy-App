@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- UEFA Champions League Official Logo -->
+  <g fill="#000000">
+    <!-- Football with stars -->
+    <path d="M256 40c-119.3 0-216 96.7-216 216s96.7 216 216 216 216-96.7 216-216S375.3 40 256 40zm0 392c-97.2 0-176-78.8-176-176S158.8 80 256 80s176 78.8 176 176-78.8 176-176 176z"/>
+    
+    <!-- Star pattern around football -->
+    <path d="M256 120l15.4 47.4h49.9l-40.4 29.3 15.4 47.4L256 214.8l-40.3 29.3 15.4-47.4-40.4-29.3h49.9L256 120z"/>
+    
+    <!-- Additional stars positioned around the circle -->
+    <path d="M140 180l10 30.8h32.4l-26.2 19 10 30.8L140 241.6l-26.2 19 10-30.8-26.2-19H130l10-30.8z"/>
+    <path d="M372 180l10 30.8h32.4l-26.2 19 10 30.8L372 241.6l-26.2 19 10-30.8-26.2-19H362l10-30.8z"/>
+    <path d="M180 320l10 30.8h32.4l-26.2 19 10 30.8L180 381.6l-26.2 19 10-30.8-26.2-19H170l10-30.8z"/>
+    <path d="M332 320l10 30.8h32.4l-26.2 19 10 30.8L332 381.6l-26.2 19 10-30.8-26.2-19H322l10-30.8z"/>
+    <path d="M100 280l8 24.6h25.9l-21 15.2 8 24.6L100 329.3l-20.9 15.1 8-24.6-21-15.2H92l8-24.6z"/>
+    <path d="M412 280l8 24.6h25.9l-21 15.2 8 24.6L412 329.3l-20.9 15.1 8-24.6-21-15.2H404l8-24.6z"/>
+    
+    <!-- Pentagon shapes inside the ball -->
+    <path d="M256 160l-20 15h-12l7.5-23h49l7.5 23h-12l-20-15z"/>
+    <path d="M220 200l-15 20v12l23-7.5v-49l-23-7.5v12l15 20z"/>
+    <path d="M292 200l15 20v12l-23-7.5v-49l23-7.5v12l-15 20z"/>
+    <path d="M235 280l15-20v-12l-23 7.5v49l23 7.5v-12l-15-20z"/>
+    <path d="M277 280l-15-20v-12l23 7.5v49l-23 7.5v-12l15-20z"/>
+  </g>
+  
+  <!-- UEFA text curved -->
+  <path d="M150 420 Q256 440 362 420" stroke="#000" stroke-width="2" fill="none" id="curve"/>
+  <text font-family="Arial Black, sans-serif" font-size="24" font-weight="bold" fill="#000000">
+    <textPath href="#curve" startOffset="25%">UEFA</textPath>
+  </text>
+  
+  <!-- CHAMPIONS LEAGUE text -->
+  <text x="256" y="470" font-family="Arial Black, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#000000">CHAMPIONS</text>
+  <text x="256" y="500" font-family="Arial Black, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#000000">LEAGUE</text>
+</svg>

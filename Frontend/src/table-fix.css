@@ -1,0 +1,74 @@
+/* Critical fix for table row visibility issue */
+.teams-page {
+  /* Remove any height constraints that could clip content */
+  min-height: auto !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+.teams-page .table-container {
+  /* Force container to show all content */
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+  overflow-y: visible !important;
+  /* Remove any potential clipping */
+  clip: none !important;
+  clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+.teams-page .standings-table {
+  /* Ensure table shows all rows */
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.teams-page .standings-table tbody {
+  /* Force tbody to display all rows */
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  display: table-row-group !important;
+}
+
+.teams-page .standings-table tbody tr {
+  /* Ensure every row is visible */
+  display: table-row !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  min-height: auto !important;
+  position: static !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  padding: 10px 6px !important;
+}
+
+/* Force first rows to be visible */
+.teams-page .standings-table tbody tr:nth-child(1),
+.teams-page .standings-table tbody tr:nth-child(2),
+.teams-page .standings-table tbody tr:nth-child(3),
+.teams-page .standings-table tbody tr:nth-child(4),
+.teams-page .standings-table tbody tr:nth-child(5),
+.teams-page .standings-table tbody tr:nth-child(6),
+.teams-page .standings-table tbody tr:nth-child(7),
+.teams-page .standings-table tbody tr:nth-child(8),
+.teams-page .standings-table tbody tr:nth-child(9),
+.teams-page .standings-table tbody tr:nth-child(10) {
+  display: table-row !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+}

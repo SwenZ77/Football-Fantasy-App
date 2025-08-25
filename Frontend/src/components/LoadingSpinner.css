@@ -1,0 +1,50 @@
+/* Loading Spinner Styles */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #ffd700;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-message {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Champions League themed loading animation */
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.loading-spinner.champions-league {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.loading-spinner.champions-league .spinner {
+  border-left-color: #00d4ff;
+  border-top-color: #ffd700;
+}
