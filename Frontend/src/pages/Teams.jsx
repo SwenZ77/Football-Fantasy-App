@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import '../table-fix.css';
+import ApiService from '../services/api';
 
 const Teams = () => {
   const [teams, setTeams] = useState([]);
@@ -52,17 +53,13 @@ const Teams = () => {
   const fetchTeams = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:8080/api/v1/teams');
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
+  const data = await ApiService.getAllTeams();
       console.log('Teams API response:', data);
       setTeams(data);
       setError(null);
     } catch (error) {
       console.error('Error fetching teams:', error);
-      setError('Failed to fetch teams. Make sure your backend server is running on localhost:8080');
+  setError('Failed to fetch teams. Please verify the backend API URL.');
     } finally {
       setLoading(false);
     }

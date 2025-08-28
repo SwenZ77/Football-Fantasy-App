@@ -1,4 +1,7 @@
-const API_BASE_URL = 'http://localhost:8080/api/v1';
+// Use a single env var for the backend base URL; supports values with or without "/api/v1"
+// Note: BACKEND_API_URL is injected via Vite define() in vite.config.js
+const __rawBase = (import.meta.env?.BACKEND_API_URL || 'http://localhost:8080').replace(/\/+$/, '');
+const API_BASE_URL = /\/api\/v\d+$/i.test(__rawBase) ? __rawBase : `${__rawBase}/api/v1`;
 
 class ApiService {
   static async makeRequest(url, options = {}) {
