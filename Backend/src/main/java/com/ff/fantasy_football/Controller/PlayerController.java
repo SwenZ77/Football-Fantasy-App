@@ -3,15 +3,11 @@ package com.ff.fantasy_football.Controller;
 import com.ff.fantasy_football.Entities.Player;
 import com.ff.fantasy_football.Service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.graphql.GraphQlProperties;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${cors.allowed-origins}")
 @RestController
 @RequestMapping("api/v1/players")
 public class PlayerController {
